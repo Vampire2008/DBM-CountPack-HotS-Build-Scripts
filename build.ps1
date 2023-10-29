@@ -2,7 +2,7 @@ $Lang = "Ru"
 $ExcludeList = "CloakenA", "LuchaA", "MurkyA", "Summer20A"
 $Author = "KainStropov"
 $CurseProjectId = 923927
-$WagoProjectId = $null
+$WagoProjectId = "n6VPenGd"
 $WoWIProjectId = $null
 
 
