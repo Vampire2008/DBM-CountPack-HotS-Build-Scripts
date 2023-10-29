@@ -1,6 +1,9 @@
 $Lang = "Ru"
 $ExcludeList = "CloakenA", "LuchaA", "MurkyA", "Summer20A"
 $Author = "KainStropov"
+$CurseProjectId = 923927
+$WagoProjectId = $null
+$WoWIProjectId = $null
 
 
 if (!(Test-Path "./VO")) {
@@ -10,4 +13,4 @@ if (!(Test-Path "./VO")) {
 
 . .\Make-SoundFiles.ps1 -Lang $Lang -ExcludeList $ExcludeList
 . .\Make-LuaScript.ps1 -Lang $Lang
-. .\Make-BaseAddonFiles.ps1 -Lang $Lang -Author $Author
+. .\Make-BaseAddonFiles.ps1 -Lang $Lang -Author $Author -CurseProjectId $CurseProjectId -WagoProjectId $WagoProjectId -WowIProjectId $WoWIProjectId

@@ -10,6 +10,7 @@
 ## IconTexture: Interface\AddOns\DBM-Core\textures\dbm_airhorn
 ## X-DBM-CountPack: 1,
 ## X-DBM-CountPack-GlobalName: DBMCPHotSRu
+## X-Curse-Project-ID: 923927
 
 CountLoadList.lua
 

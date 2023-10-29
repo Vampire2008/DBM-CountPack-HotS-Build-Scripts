@@ -1,4 +1,4 @@
-param ($Lang, $Author, $CurseProjectId, $WagoProjectId)
+param ($Lang, $Author, $CurseProjectId, $WagoProjectId, $WowIProjectId)
 
 $outputDir = ".\DBM-CountPack-HotS-$Lang"
 
@@ -16,14 +16,32 @@ $tocLines = @(
     "## X-DBM-CountPack: 1,"
     "## X-DBM-CountPack-GlobalName: DBMCPHotS$Lang"
 )
+
 if ($CurseProjectId) {
     $tocLines += "## X-Curse-Project-ID: $CurseProjectId"
 }
+
 if ($WagoProjectId) {
     $tocLines += "## X-Wago-ID: $WagoProjectId"
 }
+
+if ($WowIProjectId) {
+    $tocLines += "## X-WoWI-ID: $WowIProjectId"
+}
+
 $tocLines += ""
 $tocLines += "CountLoadList.lua"
 $tocLines += ""
 
 $tocLines | Out-File -FilePath "$outputDir\DBM-CountPack-HotS-$Lang.toc"
+
+@"
+package-as: DBM-CountPack-HotS-$Lang
+
+move-folders:
+  DBM-CountPack-HotS-$Lang/DBM-CountPack-HotS-$($Lang): DBM-CountPack-HotS-$Lang
+
+ignore:
+  - *.ps1
+  - *.csv
+"@ | Out-File -FilePath ".pkgmeta"

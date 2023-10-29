@@ -2,3 +2,7 @@ package-as: DBM-CountPack-HotS-Ru
 
 move-folders:
   DBM-CountPack-HotS-Ru/DBM-CountPack-HotS-Ru: DBM-CountPack-HotS-Ru
+
+ignore:
+  - *.ps1
+  - *.csv

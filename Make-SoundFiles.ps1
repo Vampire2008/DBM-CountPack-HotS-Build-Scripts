@@ -26,7 +26,7 @@ foreach ($file in $items) {
 
     $sec = $Matches.2
 
-    if (!(Test-Path "$out\$name")) {
+    if (!(Test-Path "$outputDir\$name")) {
         New-Item "$outputDir\$name" -ItemType Directory
     }
 
