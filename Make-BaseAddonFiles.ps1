@@ -3,7 +3,7 @@ param ($Lang, $Author, $CurseProjectId, $WagoProjectId, $WowIProjectId)
 $outputDir = ".\DBM-CountPack-HotS-$Lang"
 
 $tocLines = @(
-    "## Interface: 100107",
+    "## Interface: 100200",
     "## Interface-Classic: 11404",
     "## Interface-Wrath: 30403",
     "## Title:|cffffe00a<|r|cffff7d0aDBM Media|r|cffffe00a>|r |cff308530Countpack HotS $Lang|r",
