@@ -29,7 +29,7 @@ foreach ($hero in $items) {
     $heroLocalizedName = $namesDictionary[$heroName] ?? $heroName
 
     $hero = @{
-        Name          = "$heroName"","
+        Name          = "$($heroName)_$Lang"","
         LocalizedName = "$heroLocalizedName"","
         Path          = "$heroName\\"","
     }

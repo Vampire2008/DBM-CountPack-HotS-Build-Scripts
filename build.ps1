@@ -1,3 +1,5 @@
+param([switch]$SkipSoundFiles)
+
 $Lang = "Ru"
 $ExcludeList = "CloakenA", "LuchaA", "MurkyA", "Summer20A"
 $Author = "KainStropov"
@@ -11,6 +13,8 @@ if (!(Test-Path "./VO")) {
     exit 1
 }
 
-. .\Make-SoundFiles.ps1 -Lang $Lang -ExcludeList $ExcludeList
+if (!$SkipSoundFiles) {
+    . .\Make-SoundFiles.ps1 -Lang $Lang -ExcludeList $ExcludeList
+}
 . .\Make-LuaScript.ps1 -Lang $Lang
 . .\Make-BaseAddonFiles.ps1 -Lang $Lang -Author $Author -CurseProjectId $CurseProjectId -WagoProjectId $WagoProjectId -WowIProjectId $WoWIProjectId

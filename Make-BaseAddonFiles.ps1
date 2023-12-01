@@ -4,7 +4,7 @@ $outputDir = ".\DBM-CountPack-HotS-$Lang"
 
 $tocLines = @(
     "## Interface: 100200",
-    "## Interface-Classic: 11404",
+    "## Interface-Classic: 11500",
     "## Interface-Wrath: 30403",
     "## Title:|cffffe00a<|r|cffff7d0aDBM Media|r|cffffe00a>|r |cff308530Countpack HotS $Lang|r",
     "## Title-ruRU:|cffffe00a<|r|cffff7d0aDBM Медиа|r|cffffe00a>|r |cff308530Звуки отсчёта из HotS $Lang|r",
@@ -31,7 +31,6 @@ if ($WowIProjectId) {
 
 $tocLines += ""
 $tocLines += "CountLoadList.lua"
-$tocLines += ""
 
 $tocLines | Out-File -FilePath "$outputDir\DBM-CountPack-HotS-$Lang.toc"
 
