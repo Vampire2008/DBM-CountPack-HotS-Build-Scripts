@@ -3,9 +3,10 @@ param ($Lang, $Author, $CurseProjectId, $WagoProjectId, $WowIProjectId)
 $outputDir = ".\DBM-CountPack-HotS-$Lang"
 
 $tocLines = @(
-    "## Interface: 110007, 110100",
-    "## Interface-Classic: 11505",
-    "## Interface-Cata: 40401",
+    "## Interface: 110100",
+    "## Interface-Classic: 11506",
+    "## Interface-Cata: 40402",
+    "## Category: DBM",
     "## Title:|cffffe00a<|r|cffff7d0aDBM Media|r|cffffe00a>|r |cff308530Countpack HotS $Lang|r",
     "## Title-ruRU:|cffffe00a<|r|cffff7d0aDBM Медиа|r|cffffe00a>|r |cff308530Звуки отсчёта из HotS $Lang|r",
     "## DefaultState: enabled",
